@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75955199-4920-4A05-8CB0-1D478F70349B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tarea3_AlexOmarMartinez</RootNamespace>
+    <AssemblyName>Tarea3-AlexOmarMartinez</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\ClassCalculos.cs" />
+    <Compile Include="Clases\ClassConversiones.cs" />
+    <Compile Include="Forms\FormCuadradodeunNumero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCuadradodeunNumero.Designer.cs">
+      <DependentUpon>FormCuadradodeunNumero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCubodeunNumero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCubodeunNumero.Designer.cs">
+      <DependentUpon>FormCubodeunNumero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDiasaMinutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDiasaMinutos.Designer.cs">
+      <DependentUpon>FormDiasaMinutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDobledeunNumero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDobledeunNumero.Designer.cs">
+      <DependentUpon>FormDobledeunNumero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEdadPromedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEdadPromedio.Designer.cs">
+      <DependentUpon>FormEdadPromedio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormGalonesaLitros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGalonesaLitros.Designer.cs">
+      <DependentUpon>FormGalonesaLitros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLempirasaDolares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLempirasaDolares.Designer.cs">
+      <DependentUpon>FormLempirasaDolares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLempirasaEuros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLempirasaEuros.Designer.cs">
+      <DependentUpon>FormLempirasaEuros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLibrasaOnzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLibrasaOnzas.Designer.cs">
+      <DependentUpon>FormLibrasaOnzas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMetrosaPies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMetrosaPies.Designer.cs">
+      <DependentUpon>FormMetrosaPies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMillasaKilometros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMillasaKilometros.Designer.cs">
+      <DependentUpon>FormMillasaKilometros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMillasaMetros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMillasaMetros.Designer.cs">
+      <DependentUpon>FormMillasaMetros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormNotaTotalEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNotaTotalEstudiante.Designer.cs">
+      <DependentUpon>FormNotaTotalEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormNuevoSalario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNuevoSalario.Designer.cs">
+      <DependentUpon>FormNuevoSalario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPromedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPromedio.Designer.cs">
+      <DependentUpon>FormPromedio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPulgadasaCentimetros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPulgadasaCentimetros.Designer.cs">
+      <DependentUpon>FormPulgadasaCentimetros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSalario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSalario.Designer.cs">
+      <DependentUpon>FormSalario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSalarioconHorasExtras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSalarioconHorasExtras.Designer.cs">
+      <DependentUpon>FormSalarioconHorasExtras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSemanasaMinutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSemanasaMinutos.Designer.cs">
+      <DependentUpon>FormSemanasaMinutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSuma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSuma.Designer.cs">
+      <DependentUpon>FormSuma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTotalaPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTotalaPagar.Designer.cs">
+      <DependentUpon>FormTotalaPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTotalPagarConstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTotalPagarConstructor.Designer.cs">
+      <DependentUpon>FormTotalPagarConstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormCuadradodeunNumero.resx">
+      <DependentUpon>FormCuadradodeunNumero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCubodeunNumero.resx">
+      <DependentUpon>FormCubodeunNumero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDiasaMinutos.resx">
+      <DependentUpon>FormDiasaMinutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDobledeunNumero.resx">
+      <DependentUpon>FormDobledeunNumero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEdadPromedio.resx">
+      <DependentUpon>FormEdadPromedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGalonesaLitros.resx">
+      <DependentUpon>FormGalonesaLitros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLempirasaDolares.resx">
+      <DependentUpon>FormLempirasaDolares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLempirasaEuros.resx">
+      <DependentUpon>FormLempirasaEuros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLibrasaOnzas.resx">
+      <DependentUpon>FormLibrasaOnzas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMetrosaPies.resx">
+      <DependentUpon>FormMetrosaPies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMillasaKilometros.resx">
+      <DependentUpon>FormMillasaKilometros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMillasaMetros.resx">
+      <DependentUpon>FormMillasaMetros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNotaTotalEstudiante.resx">
+      <DependentUpon>FormNotaTotalEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNuevoSalario.resx">
+      <DependentUpon>FormNuevoSalario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPromedio.resx">
+      <DependentUpon>FormPromedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPulgadasaCentimetros.resx">
+      <DependentUpon>FormPulgadasaCentimetros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSalario.resx">
+      <DependentUpon>FormSalario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSalarioconHorasExtras.resx">
+      <DependentUpon>FormSalarioconHorasExtras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSemanasaMinutos.resx">
+      <DependentUpon>FormSemanasaMinutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSuma.resx">
+      <DependentUpon>FormSuma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTotalaPagar.resx">
+      <DependentUpon>FormTotalaPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTotalPagarConstructor.resx">
+      <DependentUpon>FormTotalPagarConstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
